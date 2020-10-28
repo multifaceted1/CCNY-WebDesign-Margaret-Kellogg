@@ -1,0 +1,19 @@
+#hit-me {
+  position: absolute;
+}
+
+#animation-div {
+  background:#bb4463;
+  height:100px;
+  width:100px;
+  position:absolute;
+  margin-top: 25px;
+}
+
+.animation-div-two {
+  background:#bb4463;
+  height:100px;
+  width:100px;
+  position:absolute;
+  margin-top: 175px;
+}
