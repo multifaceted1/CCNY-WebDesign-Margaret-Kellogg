@@ -1,0 +1,17 @@
+p {
+  display: inline-flex;
+}
+
+a {
+  display: block;
+}
+
+img {
+  height: 250px;
+  width: 250px;
+  display: block;
+}
+
+#display-none-me {
+  display: none;
+}

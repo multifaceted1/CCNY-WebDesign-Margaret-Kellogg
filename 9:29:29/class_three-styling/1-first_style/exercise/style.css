@@ -1,0 +1,27 @@
+body {
+      background-color: chartreuse;  
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+main {
+    margin: 0;
+}
+
+div {
+    margin: 0;
+    width: 100%;
+}
+
+p { 
+    padding: 0;
+    padding-bottom: 5px;
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
