@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap.min copy.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!--
+
+      Using twitter bootstrap components and gridding:
+      - create a jumbotron on the top/header of the page
+      - inside the jumbotron, create a text header and a card
+      - Center the text header and the card
+
+      - Create a row 6 columns with alerts and same color buttons underneath
+      - Center the content in each column. Use google to research.
+
+      - Create another row with 2 columns that both contain one card.
+      - Center the card in both columns. Use google to research.
+
+      - Create another row with an input group and center the input with a standard sized width. Use google to research.
+    -->
+    <div class="jumbotron top-block text-center">
+      <div class="justify-content-center">
+          <h1>Twitter Bootstrap</h1>
+        </div>
+        <div class="card justify-content-center mx-3">
+          <a class="card-body" href="https://getbootstrap.com/docs/4.4/getting-started/introduction/">Twitter Bootstrap Reference</a>
+        </div>
+      </div>
+    </div>
+    <main class="row mx-auto">
+      <div class="col-sm-2 mx-auto text-center">
+        <div class="alert alert-primary" role="alert">Primary</div>
+        <button type="button" class="btn btn-primary mx-auto">Button</button>
+      </div>
+      <div class="col-sm-2 mx-auto text-center">
+        <div class="alert alert-success" role="alert">Success</div>
+        <button type="button" class="btn btn-success mx-auto">Button</button>
+      </div>
+      <div class="col-sm-2 mx-auto text-center">
+        <div class="alert alert-danger" role="alert">Danger!</div>
+        <button type="button" class="btn btn-danger mx-auto">Button</button>
+      </div>
+      <div class="col-sm-2 mx-auto text-center">
+        <div class="alert alert-secondary" role="alert">Secondary</div>
+        <button type="button" class="btn btn-secondary mx-auto">Button</button>
+      </div>
+      <div class="col-sm-2 mx-auto text-center">
+        <div class="alert alert-warning" role="alert">Warning</div>
+        <button type="button" class="btn btn-warning">Button</button>
+      </div>
+      <div class="col-sm-2 mx auto text-center">
+        <div class="alert alert-info" role="alert">Info</div>
+        <button type="button" class="btn btn-info mx-auto">Button</button>
+      </div>
+    </main>
+    <div class="row mx-auto">
+      <div class="col-sm-5 mx-auto jumbotron text-center top-block mt-3 card">
+        <a class="card-body" href="https://www.w3schools.com/bootstrap4/">W3 Schools Bootstrap 4 Tutorial</a>
+      </div>
+      <div class="col-sm-5 mx-auto jumbotron text-center top-block mt-3 card">
+        <a class="card-body" href="https://www.w3schools.com/bootstrap/default.asp">W3 Schools Bootstrap 3 Tutorial</a>
+      </div>
+    </div>
+    <footer class="row mx-auto">
+      <div class="col-sm-7 mx-auto jumbotron text-center top-block card">
+        <h4>Your Email:</h4>
+        <input type="email">
+        <button class="btn btn-secondary" type="button">Submit</button>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+   
+</html>
