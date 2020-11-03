@@ -3,9 +3,9 @@
 //1
  - change the dolphin to the whale, and make the whale larger
 */
-
-$('img').empty;
-$('img').text('src="whale.jpeg" height="150" width="150"');
+$("img").click(function(){
+$("img").text('src="whale.jpeg" height="150" width="150"');
+});
 
 /*
 //2

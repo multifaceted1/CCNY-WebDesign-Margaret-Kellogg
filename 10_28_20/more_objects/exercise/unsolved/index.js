@@ -35,7 +35,7 @@ $("#guess-text-button").click(function(){
  // - set your guess input value to lowercase
   //- make sure the length of the input is 1, if not alert the user to only input 1 letter
   //- set your guess text on the ui
-  player.guess = $("input:text").val();
+  player.guess = $("#guess-text-input").val();
 
  
   if(player.guess.length == 1 && isNaN(player.guess)){
@@ -60,9 +60,9 @@ $("#guess-text-button").click(function(){
     var computerWins = 0;
     var winnerMessage = " You won round " + displayResults.roundNumber + "!";
     var loserMessage = " You lost round " + displayResults.roundNumber + "!";
-      if(player.guess = displayResults.randomWord.includes(player.guess, [0])) {
+   // console.log(peopleArray.indexOf("Judy") > -1);
+      if(displayResults.randomWord.indexOf(player.guess) > -1) {
         wins++;
-      
         $("#message-text").empty();
         $("#message-text").append(winnerMessage);
         $("#winning-percentage").empty();
@@ -76,12 +76,23 @@ $("#guess-text-button").click(function(){
     Display the information for all of the rounds on the html
   - clear the value in the input
 */
-        displayResults.roundsArray.push(player.guess);
-        displayResults.roundsArray.push(displayResults.randomWord);
-        displayResults.roundsArray.push(winningPercentage);
+
         $("#guess-text-input").empty();
         $(".listItem").empty();
-        $(".listItem").append(displayResults.roundsArray.toString(","));
+
+        displayResults.roundsArray.push(
+          "<li class='glow'> Player Guess: <strong>" + player.guess + "</strong>" +
+          ", Random Word: <strong>" + displayResults.randomWord + "</strong>" +
+          ", Percentage of wins: <strong>" + winningPercentage + "</strong>" +
+         " <strong>" + winnerMessage + "</strong></li>"
+          );
+          
+        $("#guess-text-input").empty();
+        var htmlString = ""
+        for(var i = 0; i < displayResults.roundsArray.length; i++){
+         htmlString += displayResults.roundsArray[i];
+         }
+        $(".rounds-list").html(htmlString);
 
       } else{
         computerWins++;
@@ -90,12 +101,20 @@ $("#guess-text-button").click(function(){
         $("#winning-percentage").empty();
         winningPercentage = (wins / displayResults.roundNumber) * 100;
         $("#winning-percentage").append(winningPercentage);
-        displayResults.roundsArray.push(player.guess);
-        displayResults.roundsArray.push(displayResults.randomWord);
-        displayResults.roundsArray.push(winningPercentage);
-        $("#guess-text-input").empty();
-        $(".listItem").empty();
-        $(".listItem").append(displayResults.roundsArray.toString(","));
+
+        displayResults.roundsArray.push(
+          "<li class='glow'> Player Guess: <strong>" + player.guess + "</strong>" +
+          ", Random Word: <strong>" + displayResults.randomWord + "</strong>" +
+          ", Percentage of wins: <strong>" + winningPercentage + "</strong>" +
+         " <strong>" + loserMessage + "</strong></li>"
+          );
+        
+        var htmlString = ""
+        for(var i = 0; i < displayResults.roundsArray.length; i++){
+        //i did have the other way that, but you can customize more with an html string
+         htmlString += displayResults.roundsArray[i];
+         }
+        $(".rounds-list").html(htmlString);
       }
   
   } else {
