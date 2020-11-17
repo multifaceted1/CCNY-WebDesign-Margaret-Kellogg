@@ -1,0 +1,45 @@
+#first-animation-div {
+  background:#98bf21;
+  height:100px;
+  width:100px;
+  position:absolute;
+}
+
+#second-animation-button {
+  position:absolute;
+  margin-top:150px;
+}
+
+#second-animation-div {
+  background:#98bf21;
+  height:200px;
+  width:200px;
+  position:absolute;
+  top:300px;
+}
+
+#third-animation-button {
+  position:absolute;
+  margin-top:500px;
+}
+
+#third-animation-div {
+  background:#98bf21;
+  height:150px;
+  width:150px;
+  position:absolute;
+  top:690px;
+}
+
+#fourth-animation-button {
+  position:absolute;
+  margin-top:730px;
+}
+
+#fourth-animation-div {
+  background:#98bf21;
+  height:150px;
+  width:150px;
+  position:absolute;
+  top:950px;
+}

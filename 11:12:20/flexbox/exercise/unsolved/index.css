@@ -1,0 +1,29 @@
+/*
+  Move the gridding to flex
+*/
+
+.flex-container-4-columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-container-3-columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  border: solid;
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  background-color: burlywood;
+  text-align: center;
+  flex-basis: auto;
+}
+
+
+
+

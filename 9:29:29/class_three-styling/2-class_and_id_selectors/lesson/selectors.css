@@ -1,0 +1,21 @@
+body {
+  background-color: powderblue;
+}
+
+#first-h1-tag {
+  color: red;
+  border-style: dotted;
+}
+
+#second-h1-tag {
+  color: blue;
+  text-decoration: underline;
+}
+
+.similar-attributes {
+  margin-left: 100px;
+}
+
+.a-selectors {
+  font-family: Impact, Charcoal, sans-serif;
+}

@@ -1,0 +1,74 @@
+/*
+  When you hover over a span tag in id top div, change the font color to blue
+*/
+span:hover {
+  color: blue;
+}
+/*
+  When you hover over a p tag in id bottom div, change the font color to green
+*/
+#bottom-div > p:hover{
+  color: green;
+}
+
+header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+/*
+  when you hover over the header change the background color to yellow and the width to 50%
+*/
+
+header:hover {
+  background-color: yellow;
+  width: 50%;
+}
+/*
+  when you hover over a p tag in the header, change the font color to read and the font size to 50
+*/
+
+header p:hover {
+  color: red;
+  font-size: 50px;
+}
+
+/*
+  when you visit an a tag in the header, change the font color to powerblue
+*/
+
+header a:visited {
+  color: powderblue;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+/*
+  when you have clicked on a link in the footer, change the font color to white
+*/
+footer > a:visited {
+  color: white;
+}
+
+/*
+  when you hover over the footer, change the background color to orange and the height of the footer to 30%
+*/
+footer:hover {
+  background-color: orange;
+  height: 30%;
+}
+/*
+  When you hover over the image, it disappears
+*/
+img:hover {
+  display: none;
+}

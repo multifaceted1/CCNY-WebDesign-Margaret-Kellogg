@@ -1,0 +1,27 @@
+#header:hover {
+  background-color: yellow;
+}
+
+a:link {
+  color: green;
+}
+
+a:visited {
+  color: green;
+}
+
+a:active {
+  color: yellow;
+}
+
+input:focus {
+  background-color: yellow;
+}
+
+.hello > .goodbye > p {
+  color: blue;
+}
+
+.hello > .goodbye > p:hover {
+  color: purple;
+}

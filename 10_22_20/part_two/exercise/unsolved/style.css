@@ -1,0 +1,23 @@
+/*
+  have the cursor be a pointer on hover of the arrows you import through font-awesome
+*/
+
+h3 {
+  color: black;
+}
+.carousel-item {
+  height: 500px;
+  width: 500px;
+}
+i {
+  font-size: 20px;
+}
+
+a {
+  font-size: 20px;
+  color: black;
+}
+
+.faArrows {
+  height: 40px;
+}

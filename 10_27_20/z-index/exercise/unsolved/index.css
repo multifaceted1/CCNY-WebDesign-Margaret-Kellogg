@@ -1,0 +1,22 @@
+/*
+  - Using opacity & z-index, get this to look like the solved-exercise.png picture
+*/
+
+img {
+  height: 250px;
+  width: 250px;
+  opacity: 70%;
+  position: fixed;
+  right: 40%;
+  top: 40%;
+}
+
+#box {
+  height: 250px;
+  width: 250px;
+  z-index: -1;
+  background-color: red;
+  position: fixed;
+  top: 40%;
+  right: 40%;
+}
