@@ -1,0 +1,20 @@
+- Create a project based on everything that you have learned in regards to web design
+- Website should include:
+  - multiple pages
+  - imported libraries (i.e. bootstrap, jquery, font-awesome)
+  - proper folder structure
+  - proper indentation and formatting in files
+  - code pushed to github
+  - website deployed to heroku
+  - proper formatting/positioning with the html elements on your pages
+  - separation between html and css files. Javascript as well if you decide to add that.
+  - proper headers and footers
+  - good amount of content on pages
+  - polished README in your github repository
+  - be creative. it can be whatever you want it to be.
+- Bonuses are:
+  - including jquery functionality
+  - including bootstrap.js functionality
+  - including other external libraries
+  - collaboration with 1 other classmate
+- I will help with whatever you need. Don't be afraid to ask.

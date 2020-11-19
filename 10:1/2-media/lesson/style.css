@@ -1,0 +1,42 @@
+img {
+  height: 250px;
+  width: 250px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+
+  img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: purple;
+  }
+
+  img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2){
+
+    body {
+      background-color: purple;
+    }
+
+    img {
+      height: 150px;
+      width: 150px;
+    }
+
+}

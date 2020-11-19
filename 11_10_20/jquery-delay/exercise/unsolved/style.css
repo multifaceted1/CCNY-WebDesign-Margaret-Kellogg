@@ -1,0 +1,39 @@
+.horizontalLine {
+    background-color: black;
+    height: 2px;
+    width: 80%;
+    margin: 10%;
+    position: relative;
+}
+
+.flexTimeline{
+    display:flex;
+}
+
+.verticalLine {
+    position: fixed;
+    bottom: 82%;
+    background-color: black;
+    width: 2px;
+    height: 30px;
+    margin-left: 5%;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+.one {
+    display: none;
+
+}
+
+.two {
+    display: none;
+    margin-left: 20%;
+}
+
+.three {
+    display: none;
+    margin-left: 50%;
+}

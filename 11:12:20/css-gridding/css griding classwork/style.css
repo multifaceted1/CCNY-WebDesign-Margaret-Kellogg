@@ -1,0 +1,24 @@
+.gridLayout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px;
+}
+.grid-item {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+img {
+    max-width: 400px;
+}
+@media only screen and (max-width: 1000px)
+{
+    .gridLayout{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 600px){
+    .gridLayout{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,40 @@
+.grid-item {
+  background-color: burlywood;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.grid-container-4-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  /* the first value represent the height of the first row */
+  /* the second value represent the height of the second row */
+  /* for all of the rows in the container */
+  grid-template-rows: 160px 200px;
+  background-color: black;
+}
+
+.grid-container-3-columns {
+  display: grid;
+  /*
+    for all of the columns in the container
+    how many frames across should each column go?
+    keep changing the number values here and see how it ends up
+    keep adjusting the size of the page as well
+    see how the columns adjust
+    You can also set them to pixels instead of frames
+  */
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-gap: 20px;
+  background-color: blue;
+}
+
+@media (max-width: 700px) {
+  .grid-container-4-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}

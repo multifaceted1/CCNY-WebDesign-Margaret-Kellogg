@@ -1,0 +1,45 @@
+/* starting at column 1 and spanning 2 columns */
+#grid-item-1 {
+  grid-column: 1 / span 2;
+}
+
+/* starting at column 2 and spanning 3 columns */
+#grid-item-4 {
+  grid-column: 2 / span 3;
+}
+
+.grid-item {
+  background-color: burlywood;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.grid-container-4-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  /* had to add the 3rd here because a new row was formed wit
+  the change to the grid-item grid-columns */
+  grid-template-rows: 160px 200px 180px;
+  background-color: black;
+}
+
+/* starting on row1 and spanning 3 rows */
+/* a new row is created, so i have it span another row */
+#grid-item-9 {
+  grid-row: 1 / span 3;
+}
+
+/* starting on row1 and spanning 2 rows */
+/* Look at the google inspect and see how things shifted around */
+#grid-item-11 {
+  grid-row: 1 / span 2;
+}
+
+.grid-container-3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  background-color: blue;
+}

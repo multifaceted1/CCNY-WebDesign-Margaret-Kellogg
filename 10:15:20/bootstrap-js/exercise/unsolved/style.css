@@ -1,0 +1,7 @@
+.koala {
+    max-width: 250px;
+
+}
+.koala:hover{
+    max-width: 270px;
+}

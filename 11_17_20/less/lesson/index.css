@@ -1,0 +1,30 @@
+body {
+  background-color: #e39d8e;
+}
+h1 {
+  color: #3bacc4;
+  font-style: Impact, Charcoal, sans-serif;
+}
+h2 {
+  color: #B24D94;
+  background-color: #e39d8e;
+  font-style: Impact, Charcoal, sans-serif;
+}
+p {
+  color: #7d4db2;
+  line-height: 1px;
+  font-size: 20px;
+}
+.borderAndSpace {
+  border: solid 2px black;
+  width: 60%;
+  margin: 10px;
+}
+.song {
+  border: solid 2px black;
+  width: 60%;
+  margin: 10px;
+}
+.song p {
+  font-style: "Lucida Console", Courier, monospace;
+}

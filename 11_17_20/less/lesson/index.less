@@ -1,0 +1,52 @@
+//variables: http://lesscss.org/#variables
+@primaryColor : #3bacc4 ;
+@backgroundColor : #e39d8e ;
+@complementaryColor : #B24D94 ;
+@paragraphColor : #7d4db2 ;
+
+@primaryFont : Impact, Charcoal, sans-serif ;
+@secondaryFont : "Lucida Console", Courier, monospace ;
+
+@primaryParagraphLineHeight: 0px;
+
+@primaryFontSize : 20px ;
+
+@songClass: song ;
+
+body {
+  background-color: @backgroundColor;
+}
+
+h1 {
+  color: @primaryColor;
+  font-style: @primaryFont;
+}
+
+h2 {
+  color: @complementaryColor;
+  background-color: @backgroundColor;
+  font-style: @primaryFont;
+}
+
+p {
+  color: @paragraphColor;
+  //you can write math: http://lesscss.org/#variables
+  line-height: (@primaryParagraphLineHeight + 1px);
+  font-size: @primaryFontSize;
+}
+
+//mixins: http://lesscss.org/#mixins
+.borderAndSpace {
+  border: solid 2px black;
+  width: 60%;
+  margin: 10px;
+}
+
+.@{songClass} {
+  //mixins: http://lesscss.org/#mixins
+  .borderAndSpace();
+  //nesting: http://lesscss.org/#nesting
+  p {
+    font-style: @secondaryFont;
+  }
+}

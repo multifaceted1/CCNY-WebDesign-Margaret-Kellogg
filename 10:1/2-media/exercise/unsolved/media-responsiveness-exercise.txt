@@ -1,0 +1,2 @@
+1. Set Media Responsiveness on your movie exercise
+2. Make it look neat at minimum and maximum width
